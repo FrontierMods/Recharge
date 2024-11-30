@@ -22,12 +22,12 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "white",
+        "id": "offwhite",
 
         "name": {
           "str": "Anker MagGo power bank"
         },
-        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:white>  <devices/power_banks:off>",
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:offwhite>  <devices/power_banks:off>",
         "expand_snippets": true,
         "weight": 1
       },
@@ -144,13 +144,13 @@
     "variant_type": "gun",
     "variants": [
       {
-        "id": "white",
+        "id": "offwhite",
 
         "name": {
           "str": "Anker MagGo power bank (on)",
           "str_pl": "Anker MagGo power banks (on)"
         },
-        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:white>  <devices/power_banks:on>",
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:offwhite>  <devices/power_banks:on>",
         "expand_snippets": true,
         "weight": 1
       },

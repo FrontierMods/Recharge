@@ -1,0 +1,17 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "recharge",
+
+    "name": "Recharge",
+    "description": "Overhauls energy storage and consumption",
+
+    "authors": ["Hyperseeker"],
+
+    "category": "items",
+
+    "dependencies": ["dda", "frontier_core", "frontier_materials"],
+
+    "path": "json"
+  }
+]

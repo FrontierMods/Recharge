@@ -1,0 +1,51 @@
+[
+  {
+    "abstract": "@power_bank",
+    "type": "TOOL",
+
+    "name": {
+      "str": "power bank"
+    },
+
+    "to_hit": {
+      "grip": "solid",
+      "length": "hand",
+      "surface": "point",
+      "balance": "neutral"
+    },
+
+    "//material": "also comes with a thin layer of thermal insulation",
+    "material": ["aluminum", "iron"],
+
+    "symbol": ";",
+    "color": "light_gray",
+
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+
+        "rigid": true,
+
+        "ammo_restriction": {
+          "battery": 963
+        }
+      }
+    ],
+
+    "melee_damage": {
+      "bash": 2
+    },
+
+    "use_action": [
+      {
+        "type": "link_up",
+        "cable_length": 1,
+        "charge_rate": "20 W"
+      }
+    ],
+
+    "flags": ["WATER_BREAK", "ELECTRONIC", "ALLOWS_REMOTE_USE"],
+
+    "price_postapoc": "2 USD"
+  }
+]

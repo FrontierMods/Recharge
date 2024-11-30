@@ -1,0 +1,349 @@
+[
+  {
+    "id": "power_bank/anker/maggo",
+    "copy-from": "@power_bank",
+    "type": "TOOL",
+
+    "//sources": [
+      "https://www.anker.com/products/a1654-maggo-10000mah-qi2-power-bank-magsafe-compatible",
+      [
+        "https://www.chargerlab.com/trump-same-style-teardown-of-anker-maggo-magnetic-power-bank-a1654/",
+        "dimensions",
+        "weight",
+        "energy capacity"
+      ]
+    ],
+
+    "name": {
+      "str": "slim power bank"
+    },
+    "description": "A compact power bank, capable of charging common household devices away from an outlet.  <devices/power_banks:off>",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "white",
+
+        "name": {
+          "str": "Anker MagGo power bank"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:white>  <devices/power_banks:off>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "black",
+
+        "name": {
+          "str": "Anker MagGo power bank"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:black>  <devices/power_banks:off>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "blue/light",
+
+        "name": {
+          "str": "Anker MagGo power bank"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:blue/light>  <devices/power_banks:off>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "green/light",
+
+        "name": {
+          "str": "Anker MagGo power bank"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:green/light>  <devices/power_banks:off>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pink",
+
+        "name": {
+          "str": "Anker MagGo power bank"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:pink>  <devices/power_banks:off>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "weight": "252 g",
+    "//dimensions": {
+      "length": "107.22 mm",
+      "width": "68.89 mm",
+      "height": "22.08 mm",
+      "raw": "163.09 ml",
+      "trim": 0.03
+    },
+    "volume": "158 ml",
+    "longest_side": "107 mm",
+
+    "//material": "also comes with a thin layer of thermal insulation",
+    "material": ["aluminum", "iron"],
+
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+
+        "rigid": true,
+
+        "//energy": {
+          "type": "li-ion",
+          "Wh": 38.5,
+          "mAh": 10000,
+          "V": 3.85,
+          "notes": ["two units of 19.5 Wh / 5000 mAh batteries internally"]
+        },
+        "//ammo_restriction": "capacity multiplied by (100 / 14.4) to accomodate 0.H standards of capacity",
+        "ammo_restriction": {
+          "battery": 963
+        }
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "transform",
+        "target": "power_bank/anker/maggo:on",
+        "active": true,
+
+        "need_charges": 1,
+        "need_charges_msg": "The power bank refuses to turn on.",
+
+        "menu_text": "Turn on",
+        "msg": "You turn the power bank on.",
+
+        "ammo_scale": 0
+      },
+      {
+        "type": "link_up",
+        "cable_length": 1,
+        "charge_rate": "20 W"
+      }
+    ],
+
+    "price": "89 USD 99 cent"
+  },
+  {
+    "id": "power_bank/anker/maggo:on",
+    "copy-from": "power_bank/anker/maggo",
+    "type": "TOOL",
+
+    "name": {
+      "str": "slim power bank (on)",
+      "str_pl": "slim power banks (on)"
+    },
+    "description": "A compact power bank, capable of charging common household devices away from an outlet.  <devices/power_banks:on>",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "white",
+
+        "name": {
+          "str": "Anker MagGo power bank (on)",
+          "str_pl": "Anker MagGo power banks (on)"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:white>  <devices/power_banks:on>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "black",
+
+        "name": {
+          "str": "Anker MagGo power bank (on)",
+          "str_pl": "Anker MagGo power banks (on)"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:black>  <devices/power_banks:on>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "blue/light",
+
+        "name": {
+          "str": "Anker MagGo power bank (on)",
+          "str_pl": "Anker MagGo power banks (on)"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:blue/light>  <devices/power_banks:on>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "green/light",
+
+        "name": {
+          "str": "Anker MagGo power bank (on)",
+          "str_pl": "Anker MagGo power banks (on)"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:green/light>  <devices/power_banks:on>",
+        "expand_snippets": true,
+        "weight": 1
+      },
+      {
+        "id": "pink",
+
+        "name": {
+          "str": "Anker MagGo power bank (on)",
+          "str_pl": "Anker MagGo power banks (on)"
+        },
+        "description": "A compact power bank, capable of charging common household devices away from an outlet.  <variant:pink>  <devices/power_banks:on>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "transform",
+        "target": "power_bank/anker/maggo",
+
+        "menu_text": "Turn off",
+        "msg": "You turn the power bank off.",
+
+        "ammo_scale": 0
+      },
+      {
+        "type": "link_up",
+        "cable_length": 1,
+        "charge_rate": "20 W"
+      }
+    ],
+
+    "extend": { "flags": ["IS_UPS"] }
+  },
+
+  {
+    "id": "power_bank/anker/powercore_26k",
+    "copy-from": "@power_bank",
+    "type": "TOOL",
+
+    "//sources": ["https://www.anker.com/products/a1277"],
+
+    "name": {
+      "str": "large power bank"
+    },
+    "description": "A large, heavy power bank, intended to charge devices while on long trips off the grid.  <devices/power_banks:off>",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "black",
+
+        "name": {
+          "str": "Anker PowerCore 26k power bank"
+        },
+        "description": "A large, heavy power bank, intended to charge devices while on long trips off the grid.  <variant:black>  <devices/power_banks:off>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "//weight": "17.5 oz = 496.12 g",
+    "weight": "496 g",
+    "//dimensions": {
+      "length": "180 mm",
+      "width": "81.5 mm",
+      "height": "22 mm",
+      "raw": "322.74 ml",
+      "trim": 0.03
+    },
+    "volume": "313 ml",
+    "longest_side": "180 mm",
+
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE",
+
+        "rigid": true,
+
+        "//energy": {
+          "type": "li-ion",
+          "Wh": 96.48,
+          "mAh": 26800,
+          "V": 4
+        },
+        "//ammo_restriction": "capacity multiplied by (100 / 14.4) to accomodate 0.H standards of capacity",
+        "ammo_restriction": {
+          "battery": 2412
+        }
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "transform",
+        "target": "power_bank/anker/powercore_26k:on",
+        "active": true,
+
+        "need_charges": 1,
+        "need_charges_msg": "The power bank refuses to turn on.",
+
+        "menu_text": "Turn on",
+        "msg": "You turn the power bank on.",
+
+        "ammo_scale": 0
+      },
+      {
+        "type": "link_up",
+        "cable_length": 1,
+        "//charge_rate": "we presume the dual-port functionality is used fully when charging the power bank",
+        "charge_rate": "20 W"
+      }
+    ],
+
+    "price": "89 USD 99 cent"
+  },
+  {
+    "id": "power_bank/anker/powercore_26k:on",
+    "copy-from": "power_bank/anker/powercore_26k",
+    "type": "TOOL",
+
+    "name": {
+      "str": "large power bank (on)",
+      "str_pl": "large power banks (on)"
+    },
+    "description": "A large, heavy power bank, intended to charge devices while on long trips off the grid.  <devices/power_banks:on>",
+
+    "variant_type": "gun",
+    "variants": [
+      {
+        "id": "black",
+
+        "name": {
+          "str": "Anker PowerCore 26k power bank (on)",
+          "str_pl": "Anker PowerCore 26k power banks (on)"
+        },
+        "description": "A large, heavy power bank, intended to charge devices while on long trips off the grid.  <variant:black>  <devices/power_banks:on>",
+        "expand_snippets": true,
+        "weight": 1
+      }
+    ],
+
+    "use_action": [
+      {
+        "type": "transform",
+        "target": "power_bank/anker/powercore_26k",
+
+        "menu_text": "Turn off",
+        "msg": "You turn the power bank off.",
+
+        "ammo_scale": 0
+      },
+      {
+        "type": "link_up",
+        "cable_length": 1,
+        "charge_rate": "20 W"
+      }
+    ],
+
+    "extend": { "flags": ["IS_UPS"] }
+  }
+]
